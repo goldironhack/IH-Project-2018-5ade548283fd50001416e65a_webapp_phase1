@@ -1,15 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Best NY Locations</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Hello World!</h1>
-        <button id="btn">Click me</button>
+    <link href="https://fonts.googleapis.com/css?family=Kreon" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="container-fluid">
+
+      <div class="row">
+
+        <div class="col title">
+          <h1>Best NY Locations</h1>
+        </div>
+
+      </div>
+
+      <div class="row mapContainer">
+        <div class="menu col-12 col-sm-2">
+
+          <div class="row">
+            <div class="parameter col-12">
+              <input type="checkbox" id="parameters">
+              <label for="safetymtrc">Safety</label><br>
+            </div>
+
+            <div class="parameter col-12">
+              <input type="checkbox" id="parameters">
+              <label for="safetymtrc">Affordability</label><br>
+            </div>
+
+            <div class="parameter col-12">
+              <input type="checkbox" id="parameters" value="">
+              <label for="safetymtrc">Distance</label><br>
+            </div>
+          </div>
+
+
+          <div class="col-12">
+            <button type="button" id="updateMapButton">Update Map</button>
+          </div>
+
+
+        </div>
+        <div id="map" class="col-12 col-sm-10"></div>
+      </div>
+
+      <div class="row ">
+
+      </div>
+
     </div>
-    <script src="index.js"></script>
-</body>
+    <script type="text/javascript" src="main.js">
+    </script>
+    <script  async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrQEtRug2fzDVBNWkeRRpQcwMvIBnrp9c&callback=initMap">
+    </script>
+  </body>
 </html>

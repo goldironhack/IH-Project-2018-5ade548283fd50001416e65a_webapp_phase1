@@ -1,9 +1,46 @@
-body {
-    color: #444;
-    font-family: Arial, sans-serif;
+#map{
+  height: 500px;
+  width: 100%;
+  padding: 0px;
+  border-radius: 10px;
 }
 
-.container {
-    width: 100%;
-    max-width: 960px;
+.menu{
+  padding: 0px;
+}
+
+.parameter{
+  padding: 15px;
+}
+
+.mapContainer{
+  background-color: #f1faee;
+}
+
+.menu button{
+  width: 100%;
+  height: 100%;
+  background-color: #04345F;
+  border-radius: 5px;
+  color: #6A9DB3;
+}
+
+.menu button:hover{
+  background-color: #6A9DB3;
+  color: #04345F;
+}
+.parameter:hover{
+  background-color: #098A90;
+}
+
+body{
+  background-color: #0F6D96;
+  font-family: 'Kreon' , serif;
+}
+
+.title{
+  padding: 25px;
+  background-color: #04345F !important;
+  text-align: center;
+  color: #f1faee;
 }
